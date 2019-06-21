@@ -30,22 +30,32 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the DOM?
+#### 1. What is the DOM?
 
-2. What is an event?
+The DOM is a model of your website that the browser constructs when it renders your page. It isn't the actual HTML, more like a slightly reorganized copy, but altering the DOM does affect what your user sees when they access your page. This can be used to create effects and change the content of the page without altering the actual real HTML/JS/CSS that underpins it.
 
-3. What is an event listener?
+#### 2. What is an event?
 
-4. Why would we convert a NodeList into an Array?
+An event is an interaction the user has with the page, or the page has with itself (or a backend source). There are different kinds of interactions -- the user clicks, the page loads, the user copies text, etc.
 
-5. What is a component?
+#### 3. What is an event listener?
+
+An event listener is a bit of code that monitors sections of the page for a specific event. "When the user clicks HERE," the listener plans, "I will expand the menu!" It's kind of like holding your action in D&D 5e.
+
+#### 4. Why would we convert a NodeList into an Array?
+
+Nodelists are array-like objects, but do not have all the methods (and therefore, all the flexibility) of true arrays.
+
+#### 5. What is a component?
+
+A component is set of reusable code that can be used to build or style similar elements/pages. If you set up your naming conventions correctly, you should be able to use them across projects -- when you make components, you're making future work easier on yourself by making "drop and go" code so you don't have to reinvent the wheel every time. 
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE.
 
 ## Minimum Viable Product
 
