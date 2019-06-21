@@ -12,8 +12,8 @@ class Carousel {
     }
     
     goLeft() {
-        // showSlides(currentIndex -= n);
-        
+        showSlides(currentIndex -= n);
+
     }
     
     goRight(n) {
