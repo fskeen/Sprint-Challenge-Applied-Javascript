@@ -14,9 +14,9 @@ class TabLink {
       this.cards = document.querySelectorAll('.card');
     } else {
       // else if `all` is false, only select the cards with matching this.tabData values
-      this.cards = document.querySelector(`.card[data-tab='${this.tabData}']`);
+      this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`);
     }
-    // console.log("this.cards = ", this.cards)
+    console.log("this.cards = ", this.cards)
     // console.log("this.tabData = ", this.tabData)
     // console.log("this.original = ", this.original)
 
@@ -34,17 +34,17 @@ class TabLink {
     // Select all elements with the .tab class on them
     const tabsCollect = document.querySelectorAll(".tab");
 
-    console.log("tabsCollect = ", tabsCollect)
+    // console.log("tabsCollect = ", tabsCollect)
     
     // Iterate through the NodeList removing the .active-tab class from each element
     tabsCollect.forEach((a) => a.classList.remove('active-tab'))
 
-    console.log(tabsCollect)
+    // console.log(tabsCollect)
 
     // Select all of the elements with the .card class on them
     const cardsCollect = document.querySelectorAll('.card');
 
-    console.log("cardsCollect before = ", cardsCollect)
+    // console.log("cardsCollect before = ", cardsCollect)
 
 
     // Iterate through the NodeList setting the display style each one to 'none'
@@ -56,7 +56,7 @@ class TabLink {
     // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. Just un-comment the code and study what is happening here.
     this.cards.forEach(card => card.selectCard());
     
-    console.log("cardsCollect after = ", cardsCollect)
+    // console.log("cardsCollect after = ", cardsCollect)
   }
 }
 
@@ -64,7 +64,10 @@ class TabCard {
   constructor(cardElement){
     // Assign this.cardElement to the cardElement DOM reference
     this.cardElement = cardElement;
+    // console.log("this.cardElement", this.cardElement)
   }
+
+  
   selectCard(){
     // Update the style of this.cardElement to display = "flex"
     this.cardElement.style.display = "flex";
