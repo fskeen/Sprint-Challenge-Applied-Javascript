@@ -37,7 +37,7 @@ class TabLink {
     console.log("tabsCollect = ", tabsCollect)
     
     // Iterate through the NodeList removing the .active-tab class from each element
-    tabsCollect.forEach((a) => a.classList.remove('.active-tab'))
+    tabsCollect.forEach((a) => a.classList.remove('active-tab'))
 
     console.log(tabsCollect)
 
